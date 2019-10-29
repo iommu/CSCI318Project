@@ -1,3 +1,5 @@
 # CSCI318Project
-CSCI318Project
-Nice
+
+This project's main goal is to test the robustness of the PubMed database's citation functionality in regards to special characters. To run this project the *batchSearch* array in main.py can be edited to change the search terms which the script will run on and then running the program with python3 will output 2 .csv files for every item in the *batchSearch* array, with the names {search term}.csv and {search term}Split.csv
+
+The {search term}.csv file is a comma delimited file containing "name, citation count" for all 500 papers returned from search item of the *batchSearch* array. This file is used internally by the script for the second part where the file {search term}Split.csv is created which stores "comma, colon, semicolon, dash, none" for every special character we accounted for (or none for no special characters). 
